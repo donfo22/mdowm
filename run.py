@@ -38,7 +38,7 @@ print('上传文件到Onedrive')
 date = datetime.datetime.now().strftime('%Y%m%d')
 date_time = datetime.datetime.now().strftime('%Y%m%d-%H%M')
 
-up_cmd = 'OneDriveUploader -f -c "/root/auth.json" -s "./videos/"'+date+' -r "video/m3u8download/"'
+up_cmd = 'OneDriveUploader -f -c "./auth2.json" -s "./videos/"'+date+' -r "video/m3u8download/"'
 print(up_cmd)
 os.system(up_cmd)
 
