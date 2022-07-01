@@ -1,5 +1,7 @@
 pip install -r requirements.txt
 
+sudo apt install -y ffmpeg
+
 视频下载方法：
 1.爬取指定视频，传入参数{p1:'v',p2:'site_addr'}
 eg: python run.py 'v' 'https://807.workgreat17.live/view_video.php?viewkey=542c22e81f44adb7f661&page=&viewtype=&category='
