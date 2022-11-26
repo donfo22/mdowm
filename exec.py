@@ -22,7 +22,7 @@ def getPage():
 def getCategory():
     category = 'dim'
     while True:
-        num = input("请输入想爬的类别:\n 1.最近加精  2.本月最热 \n 3.本月收藏  4.收藏最多 \n 5.10分钟  6.20分钟 \n 7.高清 \n")
+        num = input("请输入想爬的类别:\n 1.最近加精  2.本月最热 \n 3.本月收藏  4.收藏最多 \n 5.10分钟  6.20分钟 \n 7.高清 \n 8.本月讨论")
         try:
             r = int(num)
             break
@@ -64,7 +64,7 @@ def downloadvideo(url,file_path):
 if __name__ == '__main__':
     category = getCategory()
     str_page = str(getPage())
-    types = {'rf':'最近加精','top':'本月最热','tf':'本月收藏','mf':'收藏最多','long':'10分钟','longer':'20分钟','hf':'高清'}
+    types = {'rf':'最近加精','top':'本月最热','tf':'本月收藏','mf':'收藏最多','long':'10分钟','longer':'20分钟','hf':'高清','md':'本月讨论'}
     file_path = types[category]+'-'+str_page
     print(file_path)
     page_base_url ='http://807.workgreat17.live/v.php?category='+category+'&viewtype=basic&page='+str_page
