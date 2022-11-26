@@ -29,7 +29,7 @@ def getCategory():
         except:
             print("抱歉，您输入的不是有效的数字, 请重新输入.")
             continue
-    categories = ['rf','top','tf','mf','long','longer','hf']
+    categories = ['rf','top','tf','mf','long','longer','hf','md']
     category = categories[r-1]
     return category
 
