@@ -19,7 +19,7 @@ if int(p1) == 1:
     print('normal')
     category = exec.getCategory()
     str_page = str(exec.getPage())
-    types = {'rf':'最近加精','top':'本月最热','tf':'本月收藏','mf':'收藏最多','long':'10分钟','longer':'20分钟','hf':'高清'}
+    types = {'rf':'最近加精','top':'本月最热','tf':'本月收藏','mf':'收藏最多','long':'10分钟','longer':'20分钟','hf':'高清','md':'本月讨论'}
     file_path = types[category]+'-'+str_page
     print(file_path)
     page_url ='http://807.workgreat17.live/v.php?category='+category+'&viewtype=basic&page='+str_page
